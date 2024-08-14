@@ -1,6 +1,6 @@
 # Hugo
-title = "My Docs"
-description = "Congrats on setting up a new Doks project!"
+title = "NuoDB Control Plane"
+description = "NuoDB Control Plane documentation"
 images = ["cover.png"]
 
 # mainSections
@@ -17,12 +17,12 @@ mainSections = ["docs"]
 
   # Navbar
   navbarSticky = true # true (default) or false
-  containerBreakpoint = "lg" # "", "sm", "md", "lg" (default), "xl", "xxl", or "fluid"
+  containerBreakpoint = "fluid" # "", "sm", "md", "lg" (default), "xl", "xxl", or "fluid"
 
   ## Button
   navBarButton = false # false (default) or true
-  navBarButtonUrl = "/docs/prologue/introduction/"
-  navBarButtonText = "Get started"
+  navBarButtonUrl = "https://github.com/nuodb/nuodb-cp-releases"
+  navBarButtonText = "Getting started"
 
   # FlexSearch
   flexSearch = true # true (default) or false
@@ -41,7 +41,7 @@ mainSections = ["docs"]
   alertDismissable = true # true (default) or false
 
   # Bootstrap
-  bootstrapJavascript = false # false (default) or true
+  bootstrapJavascript = true # false (default) or true
 
   # Nav
   sectionNav = ["docs"] # ["docs"] (default) or list of sections (e.g. ["docs", "guides"])
@@ -63,7 +63,7 @@ mainSections = ["docs"]
   backgroundDots = true # true (default) or false
 
   # Homepage
-  sectionFooter = false # false (default) or true
+  sectionFooter = true # false (default) or true
 
   # Blog
   relatedPosts = false # false (default) or true
@@ -74,9 +74,9 @@ mainSections = ["docs"]
   editPage = false # false (default) or true
   lastMod = false # false (default) or true
   repoHost = "GitHub" # GitHub (default), Gitea, GitLab, Bitbucket, or BitbucketServer
-  docsRepo = "https://github.com/h-enk/doks"
+  docsRepo = "https://github.com/nuodb/nuodb-cp-releases"
   docsRepoBranch = "main" # main (default), master, or <branch name>
-  docsRepoSubPath = "" # "" (none, default) or <sub path>
+  docsRepoSubPath = "docs" # "" (none, default) or <sub path>
 
   # SCSS colors
   # backGround = "yellowgreen"

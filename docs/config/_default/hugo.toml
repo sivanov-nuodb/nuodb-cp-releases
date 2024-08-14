@@ -1,4 +1,4 @@
-title = "My Docs"
+title = "NuoDB Control Plane"
 baseurl = "http://localhost/"
 canonifyURLs = false
 disableAliases = true
@@ -17,7 +17,7 @@ defaultContentLanguage = "en"
 disableLanguages = ["de", "nl"]
 defaultContentLanguageInSubdir = false
 
-copyRight = "Copyright (c) 2020-2024 Hyas"
+copyRight = "Copyright (c) 2023, NuoDB, Inc."
 
 [build.buildStats]
   enable = true
@@ -84,3 +84,17 @@ copyRight = "Copyright (c) 2020-2024 Hyas"
   hint = "photo"
   quality = 85
   resampleFilter = "Lanczos"
+
+[markup]
+  [markup.asciidocExt]
+    backend = 'html5'
+    extensions = ['asciidoctor-diagram']
+    failureLevel = 'fatal'
+    noHeaderOrFooter = true
+    preserveTOC = false
+    safeMode = 'unsafe'
+    sectionNumbers = false
+    trace = false
+    verbose = false
+    workingFolderCurrent = true
+    [markup.asciidocExt.attributes]
