@@ -1,12 +1,14 @@
 ---
-title: "Guides"
+title: "Connect"
 description: ""
 summary: ""
-date: 2023-09-07T16:06:50+02:00
-lastmod: 2023-09-07T16:06:50+02:00
+date: 2024-08-14T14:18:36+03:00
+lastmod: 2024-08-14T14:18:36+03:00
 draft: false
-weight: 800
+weight: 320
 toc: true
+sidebar:
+  collapsed: true
 seo:
   title: "" # custom title (optional)
   description: "" # custom description (recommended)

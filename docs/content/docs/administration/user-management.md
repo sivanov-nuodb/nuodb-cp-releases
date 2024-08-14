@@ -1,4 +1,18 @@
-# DBaaS User Management and Access Control
+---
+title: "User Management and Access Control"
+description: ""
+summary: ""
+date: 2024-08-14T13:52:09+03:00
+lastmod: 2024-08-14T13:52:09+03:00
+draft: false
+weight: 210
+toc: true
+seo:
+  title: "" # custom title (optional)
+  description: "" # custom description (recommended)
+  canonical: "" # custom canonical URL (optional)
+  noindex: false # false (default) or true
+---
 
 This document describes how to create and manage users and control their access privileges.
 

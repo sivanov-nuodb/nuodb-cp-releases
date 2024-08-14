@@ -1,4 +1,18 @@
-# Database Injector Guide
+---
+title: "Database injector"
+description: ""
+summary: ""
+date: 2024-08-14T14:20:07+03:00
+lastmod: 2024-08-14T14:20:07+03:00
+draft: false
+weight: 321
+toc: true
+seo:
+  title: "" # custom title (optional)
+  description: "" # custom description (recommended)
+  canonical: "" # custom canonical URL (optional)
+  noindex: false # false (default) or true
+---
 
 NuoDB Control Plane (CP) can be used to create NuoDB databases for applications that are running in the same [Kubernetes][1] cluster.
 This document describes how to use database injector to supply database connection information to sample YCSB application.
@@ -26,9 +40,12 @@ helm install nuodb-cp-operator nuodb-cp/nuodb-cp-operator \
     ...
 ```
 
->**Note**
-> The `nuodb` service account (SA) creation is disabled in the above command for simplicity. To enable NuoDB Kubernetes Aware Admin (KAA) capabilities, the NuoDB processes should be given special permissions to access Kubernetes API server.
-For more information, please check [Automatic Management of NuoDB State](https://doc.nuodb.com/nuodb/latest/deployment-models/kubernetes-environments/kubernetes-aware-admin/). For cluster-scoped deployments, the NuoDB SA and RBAC should be provisioned before hand in each namespace where NuoDB databases are created.
+{{< callout context="note" title="Note" icon="outline/info-circle" >}}
+The `nuodb` service account (SA) creation is disabled in the above command for simplicity.
+To enable NuoDB Kubernetes Aware Admin (KAA) capabilities, the NuoDB processes should be given special permissions to access Kubernetes API server.
+For more information, please check [Automatic Management of NuoDB State](https://doc.nuodb.com/nuodb/latest/deployment-models/kubernetes-environments/kubernetes-aware-admin/). 
+For cluster-scoped deployments, the NuoDB SA and RBAC should be provisioned before hand in each namespace where NuoDB databases are created.
+{{< /callout >}}
 
 ## Database Injection
 
